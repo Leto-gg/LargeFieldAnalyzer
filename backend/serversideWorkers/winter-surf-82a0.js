@@ -25,8 +25,16 @@ function authorizeRequest(request, env, key) {
 }
 
 function handleCorsHeaders(request) {
+  const allowedOrigins = ["https://leto.gg"];
+  const requestOrigin = request.headers.get("Origin");
+
+  let corsOrigin = "";
+  if (allowedOrigins.includes(requestOrigin)) {
+    corsOrigin = requestOrigin;
+  }
+
   return new Headers({
-    "Access-Control-Allow-Origin": "http://localhost:5173",
+    "Access-Control-Allow-Origin": corsOrigin,
     "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, X-Custom-Auth-Key, X-UserId, Authorization",
     "Access-Control-Max-Age": "86400"
