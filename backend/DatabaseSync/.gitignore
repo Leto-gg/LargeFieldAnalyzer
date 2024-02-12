@@ -3,7 +3,6 @@ node_modules
 analyzerbackend/DatabaseSync/.env
 analysisQueue
 analysisCIDs
-cron.production
 script_scheduler.log
 logfile.log
 backend/host-ui/node_modules
