@@ -1,6 +1,6 @@
 .env
 node_modules
-analyzerbackend/DatabaseSync/.env
+backend/DatabaseSync/.env
 analysisQueue
 analysisCIDs
 script_scheduler.log
