@@ -12,6 +12,6 @@ Currently there are two ways we can scan your content for malware. Input into ou
 If you wanted to send your logs for your content to be analyzed, your .csv file will need to divided into lines with content positioned on each line.  
 
 
-Option 1. Send us the CID for the content in question via our dashboard. 
+Option 1. Send us a IPFS/Filecoin CID for the content in question via our dashboard. 
 
-Option 2. Send us a .CSV log file with either IPFS/Filecoin CID's included or 
+Option 2. If you want to scan large amounts of content, send us a .CSV log file with either IPFS/Filecoin CID's or URL's within each line. This tool is meant for publically hosted data.  
